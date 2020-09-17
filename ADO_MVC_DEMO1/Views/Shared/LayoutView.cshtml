@@ -1,0 +1,63 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Layout</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <table cellspacing="3" cellpadding="3" align="center" class="table table-bordered  table-hover" >
+
+            <tr style="background-color:darkslateblue;color:white;text-align:center">
+                <td colspan="2"><h2>Antara Technology Private Limated | Pandharpur</h2></td>
+            </tr>
+
+            <tr height="500">
+                <td width="100">
+                    <br /><br />
+                    <table class="table table-bordered"> 
+                        <tr>
+
+                            <td> @Html.ActionLink("Employee_List", "Index")</td>
+
+                        </tr>
+                        
+                        <tr>
+                            <td>@Html.ActionLink("Add New Employee", "create")</td>
+                        </tr>
+
+
+                    </table>
+                     
+                </td>
+                <td width="600">
+                    @RenderBody()
+                </td>
+            </tr>
+
+            <tr style="background-color:darkslategray;color:white;text-align:center">
+                <td colspan="2">
+                    &copy; Copyright 2020 <br />
+                    Teaching | Development of Software | Training 
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
